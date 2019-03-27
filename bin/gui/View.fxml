@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="gui.ViewController">
+   <children>
+      <HBox layoutX="25.0" layoutY="103.0" prefHeight="26.0" prefWidth="350.0">
+         <children>
+            <TextField fx:id="txtA" alignment="CENTER" promptText="A" />
+            <TextField fx:id="txtB" alignment="CENTER" promptText="B" />
+            <TextField fx:id="txtC" alignment="CENTER" promptText="C" />
+         </children>
+      </HBox>
+      <Label layoutX="135.0" layoutY="39.0" text="Equação do 2º Grau" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btCalcular" layoutX="174.0" layoutY="168.0" mnemonicParsing="false" onAction="#btOnCalcAction" text="Calcular" />
+      <Label layoutX="47.0" layoutY="227.0" text="Delta:" />
+      <Label fx:id="lblDelta" layoutX="189.0" layoutY="227.0" />
+      <Label fx:id="lblRaiz" alignment="CENTER" layoutX="34.0" layoutY="282.0" prefHeight="20.0" prefWidth="340.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblX1" layoutX="189.0" layoutY="334.0" />
+      <Label fx:id="lblX2" layoutX="189.0" layoutY="378.0" />
+      <Label layoutX="47.0" layoutY="334.0" text="x1:" />
+      <Label layoutX="47.0" layoutY="378.0" text="x2:" />
+      <Label layoutX="147.0" layoutY="438.0" text="by Flavio Mendes" textFill="#0606dd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
